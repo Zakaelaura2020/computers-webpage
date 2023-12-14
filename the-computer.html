@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A számítógép - Működés</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand title" href="#">A számítógép</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Bevezető</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">A számítógép</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container szoveg">
+        <h2>A Számtógép működése, részei</h2>
+        <h3>Hardver</h3>
+        <p>a számítógép fizikailag megfogható részeinek összességét értjük. A számítógép működéséhez alapvetően hardver és szoftver szükséges, a kettő közötti kapcsolatot a firmware hozza létre, ami a hardverekbe a gyártók által „beépített” szoftvernek tekinthető.</p>
+        <p>Hardver ami a gépházba van, amit meg tudsz fogni, össze és szétszerelni. Ezek bonyolult áramköri lapokból állnak, amelyeken elektronikai alkatrészek találhatóak ráforrasztva. Ezek az alkatrészek különféle csatlakozókkal csatlakoznak egymáshoz, amelyek többnyire más más adatátviteli protokollt használnak, ezért ha attól félsz hogy valamit rosszul csatlakoztatsz össze egy szerelésnél, nem kell aggódnod mert minden csatlakozónak megvan a saját helye és alakja.</p>
+        <h5>Az alaplap</h5>
+        <p>Az alaplap, az a fő áramköri lap, amely minden okoseszközben megtalálható. Ez az az alkatrész amely az összes többit összeilleszti és komminkációra, működésre hozza.</p>
+        <p>Az alaplapra közvetlen csatlakozik:</p>
+        <ul>
+            <li><a href="#cpu">Processzor (CPU)</a></li>
+            <li><a href="#ram">Memória (RAM)</a></li>
+            <li><a href="#expands">Bővítőkártyák</a></li>
+        </ul>
+        <p>Az alaplapra kábelekkel csatlakozik:</p>
+        <ul>
+            <li><a href="#drives">Tárolók</a></li>
+            <li><a href="#readers">Olvasók</a></li>
+            <li><a href="#coolers">Hűtőventillátorok</a></li>
+            <li><a href="#power">Tápellátás</a></li>
+            <li><a href="#etc">Vezérlőgombok, külső csatlakozók</a></li>
+        </ul>
+        <h5 id="cpu">Processzor (CPU)</h5>
+        <p>A processzor (CPU, Central Processing Unit) A számítógép agya. Ez az alkatrész végzi el az összes feladatot a felhasználó számára, a programok futásához szükséges kalkulációkat feldolgozza és elvégzi, majd ezek eredményét eltárolja a <a href="#ram">Memóriában (RAM)</a></p>
+        <p>Ez az alkatrész egy kis méretű, vékony áramköri lap, amelynek tetején egy jó hőelvezető fém van, az alján pedig rengeteg csatlakozó. Az alaplapon található foglalatba csatlakozik, egyféleképpen lehet belehelyezni.</p>
+        <img src="img/cpu.jpeg" alt="Processzor" width="500" height="300" class="right">
+        <h6>Méretszbványok</h6>
+        <p>Több féle forma és méretszabvány létezik a processzortípusok között, ezért alkatrészvásárlásnál meg kell róla győződni hogy kompatibilis-e az alaplappal. A 3 fő szabvány az LGA (Land Grid Array), PGA (Pin Grid Aarray), és BGA (Ball Grid Array). A legelterjedtebb az LGA, ahol a tüskék az alaplapon, a sík csatlakozók pedig a processzoron van. A PGA formát is használják, ahol a tüskék a processzor alján vannak. Ennek az volt a hártánya, hogy a felhasználó könnyen letörhette ezeket a tüskéket, és tönkretehették a processzort. A Ryzen ezt használta, de már az újabb processzoraikban LGA-t használtak ők is, ahogy az Intel</p>
+        <h6>Használat és beszerelés</h6>
+        <p>A processzornak szüksége van valamilyen hűtésre, mivel terhelés alatt rendkívül fel tud melegedni, és kárt tud tenni a rendszerben. Ezért miután óvatosan beszereltük a processzort az alaplapra, kell valamilyen hűtés a processzorra. Aktív vagy passzív hűtés is alkalmazható, de egy rendes számítógépben az aktív hűtés ajánlott, ahol egy ventillátor hűti a processzort. Passzív hűtést a kis méretű okos elektronikai eszközökben szoktak alkalmazni, ahol egy ventillátor nem férne el, például a telefonokban. A passzív hűtést egy program végzi el, amely lekorlátozza a processzor terhelését és sebességét, amitől rendkívül lelassulhat az eszköz.</p>
+        <h5 id="ram">Memória (RAM)</h5>
+        <p>A memória (Random Access Memory) egy alaplapon található kis méretű áramköri lap, amely kis elektronikai kapcsolókat tartalmaz, amelyek képesek adatokat tárolni.</p><img src="img/ram.webp" alt="Memória" class="left">
+        <p>A memória célja, hogy a processzor számára elvégzendő feladatokat tárolja, és a nem mentett adatokat tárolja a felhasználónak, amíg a futó programot be nem zárja, vagy el nem menti azt. Mikor elindítunk egy programot a számítógépen, a <a href="#drives">lemez</a> tárolta adatokat betölti a memóriába, és onnantól abból fut. A számítógép leállításakor a memóriából minden kiürül, ezért fontos hogy elmentsük az adatainkat.</p><br>
+        <h6>A memóriák csoportosítása</h6>
+        <ul>
+            <li>
+                ROM (csak olvasható) típusú memóriák:
+                Tartalmuk kiolvasható, de nem változtatható meg.
+            </li>
+            <li>
+                RAM (írható és olvasható) típusú memóriák:
+                Olvashatók, törölhetők és újra írhatók
+            </li>
+        </ul>
+        <br><br>
+        <h5 id="expands">Bővítőkártyák</h5>
+        <p>A számítógéphez csatlakoztatható bővítőkártyák olyan perifériákat jelentenek, amelyeket a felhasználók a számítógép alaplapjához csatlakoztatva bővíthetnek vagy kiegészíthetnek a rendszer funkcionalitását. Ezek a kártyák a következő feladatokra specializálódnak:</p>
+        <ul>
+            <li>Grafikus kártyák: Ezen kártyák felelnek a monitorra küldött kép megjelenítéséért, és javítják a számítógép grafikus teljesítményét, különösen játékok vagy grafikai tervezési alkalmazások használatakor.</li>
+            <li>Hangkártyák: A hangkártyák lehetővé teszik a hangszórók vagy fejhallgatók csatlakoztatását, és javítják a hangminőséget, lehetővé téve a jobb audioélményt filmnézésnél, zenehallgatásnál vagy játékoknál.</li>
+            <li>Hálózati kártyák (NIC): Az ilyen kártyák segítségével a számítógép csatlakozik a hálózathoz, lehet vezetékes (Ethernet) vagy vezeték nélküli (Wi-Fi) kapcsolat.</li>
+            <li>Videóvágó kártyák: Ezek a kártyák lehetővé teszik a televízióadások vagy videofelvételek rögzítését és szerkesztését a számítógépen.</li>
+            <img src="img/expcard.jpeg" alt="Bővítőkártya" width="550" height="300" class="right">
+            <li>Hangszórókártyák: Olyan kártyák, amelyek kifejezetten hangszórókhoz csatlakoztatva javítják a hangrendszer teljesítményét és minőségét.</li>
+            <li>RAID kártyák: Ezek a kártyák a merevlemezek RAID (Redundant Array of Independent Disks) konfigurációinak kezelésére szolgálnak, növelve a tárolási kapacitást és a rendszer megbízhatóságát.</li>
+        </ul>
+        <p>Ezek a bővítőkártyák lehetővé teszik a felhasználók számára, hogy testreszabhassák a számítógépüket az egyéni igényeiknek megfelelően, és a különböző felhasználási módokhoz optimalizálhassák a rendszert. A csatlakoztatott kártyák általában a számítógép PCI vagy PCIe bővítőhelyeibe illeszkednek, és azokat egyszerűen telepíthetik a felhasználók, így rugalmasan alakíthatják a számítógép konfigurációját.</p>
+        <h5 id="drives">Tárolók</h5>
+        <p>A számítógép tárhelye kulcsfontosságú szerepet játszik az adatok tárolásában és elérhetőségében.<br>Két fő típusa van: merevlemez meghajtó (HDD) és szilárdtest meghajtó (SSD).</p><img src="img/drives.jpeg" alt="Tárolók" class="left">
+        <p>A merevlemez meghajtó hagyományosan forgó lemezekre épül, ahol az adatokat mágneses fejek olvassák és írják. Az SSD viszont flash memóriát használ, ami gyorsabb adatelérést és megbízhatóságot eredményez. A tárhely feladata az operációs rendszer, alkalmazások és felhasználói adatok tárolása.</p>
+        <p>A merevlemez nagy kapacitású, gazdaságos tárhelyet kínál, míg az SSD gyorsabb adatátvitelt és megbízhatóságot biztosít, de általában drágább. A számítógép gyorsaságát és hatékonyságát jelentősen befolyásolja a tárhely típusa, és az egyes felhasználási eseteknek megfelelően választott tárhely lehetőséget biztosít a személyre szabott adattárolásra.</p><br>
+        <h5 id="readers">Olvasók</h5>
+        <p>A számítógéphez csatlakoztatható olvasók olyan eszközök, amelyek lehetővé teszik az adatok beolvasását a számítógép számára különféle adathordozókról. Ezek a berendezések kulcsfontosságúak az adatok megosztásában, tárolásában és másolásában. Optikai olvasók, például CD- és DVD-meghajtók, lehetővé teszik az optikai lemezekről való adatok olvasását és írását.</p><img src="img/reader.jpeg" alt="Optikai lemezmeghajtó" class="right"><p>Ezek ideálisak szoftverek telepítéséhez, multimédiás tartalmak lejátszásához és adatok archiválásához.</p>
+        <p>A floppy meghajtók régebbi technológiát képviselnek, de még mindig fontosak lehetnek az archív adatokhoz vagy a régebbi számítógépes rendszerekhez való hozzáférés szempontjából. Az USB- és kártyaolvasók lehetővé teszik a külső adattárolók, például USB-meghajtók vagy memóriakártyák csatlakoztatását, így könnyen és gyorsan lehet adatokat átvinni vagy tárolni.</p>
+        <p>Ezek az olvasók segítik a számítógépet a különböző adathordozókkal való együttműködésben, és lehetővé teszik az adatok sokféle formátumban történő kezelését és elérését, hozzájárulva ezzel a rendszer funkcionalitásához és kiterjesztéséhez.</p>
+        <h5 id="coolers">Hűtőventillátorok, hűtési megoldások</h5>
+        <p>A számítógépek hűtése létfontosságú a megfelelő működés és teljesítmény biztosítása szempontjából, különösen a processzorok és más alkatrészek esetében. Két fő típusú hűtési megoldás létezik: aktív és passzív.</p><img src="img/cpufan.jpeg" alt="Processzor hűtőventillátor" class="left" width="200" height="200">
+        <p>Az aktív hűtés ventilátorokat használ a hő elszállítására. A processzorok és a grafikus kártyák gyakran rendelkeznek saját aktív hűtőrendszerrel, amely ventilátort alkalmaz a hő elvezetésére a hűtőbordáról vagy hűtőborda rendszerről. Ezek a ventilátorok gyors hűtést biztosítanak, de zajjal és energiafogyasztással is járhatnak.</p><br>
+        <p>A passzív hűtés a hő átvitelét a természetes hőmérsékleti különbségek vagy más alkatrészek segítségével valósítja meg, nem alkalmaz ventilátort. Egy passzív hűtőborda például hagyja, hogy a hő a borda felületén keresztül disszipálódjon a környezetbe. Ez csendesebb megoldást jelent, de hatékonysága korlátozottabb lehet az aktív hűtéshez képest.</p><br>
+        <p>A ventilátorokat a hűtőbordákra vagy hűtőblokkokra szerelik fel a hő hatékonyabb átvitele érdekében. A ventilátorok típusai közé tartoznak a hagyományos, forgó lapátokkal rendelkező ventilátorok, a radiátorokra szerelhető ventilátorok és a folyadékhűtési rendszerekben használt ventillátorok. A ventilátorok beszerelése figyelmet és precizitást igényel, hogy a megfelelő légáramlást és hűtést biztosítsák, minimalizálva a számítógép alkatrészeinek túlzott hőmérsékletét.</p>
+        <h5 id="etc">A számítógépház vezérlőgombjai, külső csatlakozók</h5>
+        <p>A számítógépház vezérlőgombjai alapvető részét képezik a számítógép külső interfészének, lehetőséget teremtve a felhasználóknak a számítógép be- és kikapcsolására, valamint az USB-portok és hangcsatlakozók elérésére. Ezek a vezérlőgombok gyakran a számítógépház tetején vagy előlapján találhatók, és szolgáltatásokat biztosítanak, például USB-portok, hangszóró- és mikrofonbemenetek.</p>
+        <p>A vezérlőgombok csatlakozói között szerepelhetnek a következők:</p>
+        <ul>
+            <li>Power Button (be/kikapcsoló gomb): Ezzel a gombbal kapcsoljuk be és ki a számítógépet. Az egyérintéses kapcsolók esetén rövid érintéssel aktiválhatók.</li>
+            <li>Reset Button (újraindító gomb): A rendszer újraindítására szolgál. Ezt a gombot akkor használjuk, ha a számítógép nem reagál megfelelően.</li>
+            <li>USB-portok: A vezérlőgombok közelében található USB-portok lehetővé teszik külső eszközök csatlakoztatását, például pendrive-ok, külső merevlemezek vagy egyéb USB-kompatibilis eszközök.</li>
+            <li>Hangszóró és mikrofonbemenetek: Ezek a csatlakozók a hangkimenetek és mikrofonok számára szolgálnak, lehetővé téve a könnyű hozzáférést az audioeszközökhez.</li>
+        </ul>
+        <img src="img/case.jpeg" alt="Vezérlőgombok" width="400" height="250">
+        <img src="img/atxitx.png" alt="Méretek" width="400" height="250">
+        <img src="img/atxitxmb.png" alt="Alaplapok" width="400" height="250" class="bordered">
+        <br><br>
+        <p>A számítógépház mérete és kompatibilitása fontos tényező a rendszerépítés során. Az ATX, MicroATX, Mini-ITX stb. standardok különböző méretű számítógépházakat definiálnak. A számítógép alaplap méretéhez igazodva válasszuk ki a megfelelő számítógépházat. Fontos figyelembe venni a tápegység méretét, a hűtőrendszer elhelyezését és egyéb bővítőhelyeket a megfelelő kompatibilitás és jövőbeli fejleszthetőség érdekében. A számítógépház méretének és kialakításának megfelelő kiválasztása hozzájárul a rendszer hatékony és esztétikus összeállításához.</p>
+        <h3>Szoftver</h3>
+        <p>A számítógépes szoftverek széles körű és változatos alkalmazása számos területet lefed a mindennapi életben és az üzleti környezetben egyaránt. A szoftvereket két fő kategóriába sorolhatjuk: rendszer- és alkalmazás-szoftverek.</p>
+        <p>Az operációs rendszer (rendszerszoftver) az egyik legfontosabb számítógépes szoftverkategória. Ez a programrendszer irányítja és kezeli a hardveres erőforrásokat, például a processzort, memóriát, perifériákat és a fájlrendszert. Az operációs rendszer biztosítja a felhasználói felületet, amelyen keresztül az emberi felhasználók kommunikálhatnak a számítógéppel, és feladataikhoz szükséges alkalmazásokat futtathatnak. Példák ilyen rendszerekre az Microsoft Windows, macOS, Linux.</p>
+        <img src="img/software.webp" alt="Szoftverek" width="400" height="250" class="right">
+        <p>Az alkalmazás-szoftverek olyan programokat foglalnak magukban, amelyeket a felhasználók a konkrét feladataik elvégzéséhez használnak. Ez lehet irodai szoftver, mint a Microsoft Office (Word, Excel, PowerPoint), böngészők, grafikai tervezőprogramok, játékok, adatbázis-kezelők és még számos más alkalmazás.</p>
+        <p>A hardver-szoftver kapcsolat kiemelkedő fontosságú a számítógép működésében. A hardver a számítógép fizikai összetevőit jelenti, például processzor, memória, merevlemez stb. A szoftver pedig ezeket a hardveres elemeket irányítja és teszi lehetővé a felhasználók számára az interakciót a géppel. Az operációs rendszer segítségével a szoftverek képesek kihasználni a rendszer hardveres erőforrásait, így létrejön egy összetett, jól működő rendszer. Ez a szoros kapcsolat a hardver és a szoftver között lehetővé teszi a számítógép rugalmas konfigurálását és alkalmazkodását a különböző feladatokhoz és igényekhez.</p>
+        <p>A számítógépes technológia fejlődése szorosan összefonódik mindkét aspektussal, és a fejlődő szoftverek újabb és hatékonyabb módon hasznosítják a hardveres erőforrásokat a felhasználók számára. Az innováció és a folyamatos fejlesztés révén a szoftverek képesek kiemelkedő teljesítményt nyújtani, ami hozzájárul a számítógépek egyre növekvő funkcionalitásához és sokoldalúságához.</p>
+    </div>
+</body>
+</html>

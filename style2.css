@@ -1,0 +1,37 @@
+.szoveg {
+    margin-top: 70px;
+}
+
+.right {
+    float: right;
+    margin-left: 20px;
+}
+
+.left {
+    float: left;
+    margin-right: 20px;
+}
+
+.bordered {
+    border: 1px solid rgb(146, 146, 146);
+}
+
+.center {
+    text-align: center;
+}
+
+.sidelist {
+    text-align: center;
+}
+
+.sidelist li {
+    display: inline;
+    margin: 50px;
+    font-weight: 700;
+}
+
+.support img {
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
